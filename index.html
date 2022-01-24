@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Owl css -->
+    <link rel="stylesheet" href="./style/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owlCarousel/owl.theme.default.min.css">
+
     <title>Netflix Clone</title>
 </head>
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="logo">Netflix</h1>
 
             <nav>
@@ -24,16 +30,39 @@
     </header>
 
     <main>
-        <div class="destaque">
-            <div class="container">
+        <section class="destaque">
+            <div class="container-fluid">
                 <h1 class="titulo">House of Cards</h1>
                 <p class="sinopse">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+                <div class="botoes">
+                    <button role="button" class="btn"><i class="fas fa-play"></i>assistir</button>
+                    <button role="button" class="btn"><i class="fas fa-info-circle"></i>mais informações</button>
+                </div>
+            </div>    
+        </section>
+
+        <section class="movies-carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="./img/mini1.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini2.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini3.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini4.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini5.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini6.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini7.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini8.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini9.jpg" alt="" srcset=""></div>
+                <div class="item"><img src="./img/mini10.jpg" alt="" srcset=""></div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

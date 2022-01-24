@@ -30,10 +30,35 @@ body {
   padding: 10px;
 }
 
-.main-header .container {
+.btn {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border: 1px solid #e50914;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #efefef;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #efefef;
+  color: #141414;
+  border-color: #efefef;
+}
+
+.main-header .container-fluid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-header .logo {
@@ -59,5 +84,44 @@ body {
 
 .main-header .main-menu a:hover {
   color: #efefef;
+}
+
+.destaque {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/houseofcards.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/houseofcards.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destaque .container-fluid {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 20px;
+  width: 70%;
+}
+
+.destaque .botoes {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.destaque .titulo {
+  font-size: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
