@@ -95,3 +95,73 @@ body {
         font-size: 4rem;
     }
 }
+
+.movies-carousel{
+    padding: 40px 10px;
+    .title{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    .item{
+        img{
+            transition: .3s ease-in-out all;
+        }
+        &:hover>img{
+            opacity: .5;
+        }
+        &:hover>.botoes-carousel{
+            display: flex;
+        }
+    }
+    .botoes-carousel{
+        position: absolute;
+        top: 50%;
+        display: none;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 2.75rem;
+            transition: .3s ease-in-out all;
+            &:hover{
+                color:$vermelha;
+            }
+        }
+    }
+
+}
+@media (max-width:798px){
+    .main-header {
+        .container-fluid{
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    } 
+
+    .destaque{
+        height: 500px;  
+        .botoes{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .titulo{
+            font-size: 3rem;
+        }
+    }
+    .movies-carousel{
+        .title{
+            font-size: 2rem;
+        }
+        .botoes-carousel{
+            gap: 20px;
+            width: 100%;
+            a{
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
